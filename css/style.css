@@ -6,7 +6,7 @@
     --body: #516171;
     --border: rgba(0,0,0,0.08);
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
-    
+
 }
 
 body {
@@ -80,7 +80,7 @@ section {
 
 .hero-slider .owl-prev:hover,
 .hero-slider .owl-next:hover {
-    background-color: var(--brand) !important; 
+    background-color: var(--brand) !important;
 }
 
 .owl-dot.active span{
@@ -187,10 +187,11 @@ section {
     border: #945504 1px solid;
     border-radius: 50%;
     text-decoration: underline;
-    opacity: .8;  
+    opacity: .8;
   }
   .navbar-brand:hover{
-  box-shadow: 0px 4px 25px  #945504;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0px 4px 25px  #945504;*/
   opacity: 1;
 }
 

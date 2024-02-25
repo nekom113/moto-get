@@ -134,6 +134,14 @@ section {
 .top-nav i {
     vertical-align: middle;
 }
+.top-nav--phone-call{
+    border-bottom: inherit;
+    color: #FFFFFF;
+}
+
+.top-nav--phone-call:hover{
+    color: #000;
+}
 
 .navbar {
     box-shadow: var(--shadow);

@@ -310,6 +310,7 @@ section {
     padding: 32px;
     background-color: #fff;
     box-shadow: var(--shadow);
+    border:1px solid var(--brand);
 }
 
 .service h5 {

@@ -657,3 +657,6 @@ input.form-control {
 .section-title p {
     margin-bottom: 0;
 }
+.section-bg {
+    background-color: #f6f8fb;
+}

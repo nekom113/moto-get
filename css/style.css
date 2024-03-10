@@ -60,7 +60,6 @@ section {
     background-color: rgba(255, 255, 255, 0.3) !important;
     width: 60px !important;
     height: 60px !important;
-    display: block;
     display: grid;
     place-items: center;
     color: #fff !important;
@@ -80,8 +79,6 @@ section {
     top: 50%;
     left: 10px; /* Расстояние от левого края */
     transform: translateY(-50%);
-    width: 50px; /* Ширина кнопок */
-    height: 50px; /* Высота кнопок */
 }
 
 
@@ -94,8 +91,8 @@ section {
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
     width: 20px; /* Ширина кнопок */
-    height: 100px; /* Высота кнопок */
-    background-color: #eaeaea; /* Цвет фона кнопок */
+    height: 30px; /* Высота кнопок */
+    background-color: rgba(234, 234, 234, 0.3); /* Цвет фона кнопок */
     opacity: .8;
 }
 

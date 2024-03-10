@@ -205,6 +205,8 @@ section {
 }
 
 .navbar-brand {
+    display: flex;
+    align-items: center;
     background-image: url('../img/logo-moto.svg');
     font-size: 28px;
     font-weight: 700;

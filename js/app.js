@@ -48,7 +48,8 @@ $(document).ready(function () {
         smartSpeed: 900,
         items: 1,
         margin: 24,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 4000,
+        nav: true,
     })
 });

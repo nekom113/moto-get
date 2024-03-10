@@ -40,9 +40,13 @@ a {
 a:hover {
     color: var(--brand);
 }
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 0 rgb(3, 3, 3);;
+}
 
 section {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 
@@ -72,11 +76,27 @@ section {
 }
 
 .owl-prev {
-    left: 0;
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Расстояние от левого края */
+    transform: translateY(-50%);
+    width: 50px; /* Ширина кнопок */
+    height: 50px; /* Высота кнопок */
 }
 
+
 .owl-next {
-    right: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Расстояние от правого края */
+    transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    width: 20px; /* Ширина кнопок */
+    height: 100px; /* Высота кнопок */
+    background-color: #eaeaea; /* Цвет фона кнопок */
+    opacity: .8;
 }
 
 .hero-slider .owl-prev:hover,

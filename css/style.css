@@ -111,6 +111,12 @@ section {
   /* Цвет фона кнопок */
   opacity: .8;
 }
+@media (max-width: 768px) {
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    display: none;
+  }
+}
 
 .hero-slider .owl-prev:hover,
 .hero-slider .owl-next:hover {

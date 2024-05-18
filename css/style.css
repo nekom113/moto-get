@@ -229,15 +229,37 @@ section {
 .navbar-brand {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
   background-image: url('../img/logo-moto.svg');
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   text-decoration: underline;
   opacity: 1;
+}
+@media screen and (max-width: 508px) {
+  
+  .navbar{
+    padding: 0;
+  }
+  .navbar-brand {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar-toggler {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+  
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .navbar-brand:hover {
@@ -566,7 +588,7 @@ footer .footer-top {
 .footer-navbar-brand {
   /* color: #fff; */
   
-  background-image: url('../img/logo-moto.svg');
+  background-image: url('../img/logo-moto-light.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

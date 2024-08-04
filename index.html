@@ -19,29 +19,29 @@
 
     <!-- Yandex.Metrika counter -->
     <!-- <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () {
-          (m[i].a = m[i].a || []).push(arguments)
-        };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
+        (function (m, e, t, r, i, k, a) {
+          m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+          };
+          m[i].l = 1 * new Date();
+          for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+              return;
+            }
           }
-        }
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-      })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+          k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      ym(97391620, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true
-      });
-    </script> -->
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/97391620" style="position:absolute; left:-9999px;" alt=""/></div>
-    </noscript>
+        ym(97391620, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true
+        });
+      </script> -->
+<!--    <noscript>-->
+<!--        <div><img src="https://mc.yandex.ru/watch/97391620" style="position:absolute; left:-9999px;" alt=""/></div>-->
+<!--    </noscript>-->
     <!-- /Yandex.Metrika counter -->
 </head>
 
@@ -118,15 +118,15 @@
 
 <!-- <div class="owl-carousel owl-theme hero-slider"> -->
 <!-- <div class="slide slide1">
- <div class="container">
-   <div class="row">
-     <div class="col-12 text-center text-white">
-       <h6 class="text-white text-uppercase">Подбор мотоциклов индивидуально для вас</h6>
-       <h1 class="display-3 my-4">получи свободу<br />для путешествий</h1>
-       <a href="#about" class="btn btn-brand">Начать</a>
-     </div>
+<div class="container">
+ <div class="row">
+   <div class="col-12 text-center text-white">
+     <h6 class="text-white text-uppercase">Подбор мотоциклов индивидуально для вас</h6>
+     <h1 class="display-3 my-4">получи свободу<br />для путешествий</h1>
+     <a href="#about" class="btn btn-brand">Начать</a>
    </div>
  </div>
+</div>
 </div>-->
 <div class="slide slide2">
     <div class="container">
@@ -620,7 +620,7 @@
             <h2>Контактная информация</h2>
             <p>Буду рад ответить на любые ваши вопросы</p>
         </div>
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-2 justify-content-center">
 
             <div class="col-lg-10">
 
@@ -633,7 +633,7 @@
                         </div>
 
                         <div class="col-lg-4 info mt-4 mt-lg-0">
-                            <i class="bi bi-envelope"></i>
+                            <i class="post-form-activate-icon bi bi-envelope"></i>
                             <h4 class="post-form-activate-label">Почта:</h4>
                             <p>speediracer@mail.ru</p>
                         </div>
@@ -649,24 +649,20 @@
             </div>
 
         </div>
-        <div class="row mt-5 justify-content-center" style="display:flex;">
+        <div class="email-body-form-container row mt-5 justify-content-center" style="display:none;">
             <div class="col-lg-10">
-                <!-- action="https://www.motodc.ru/forms/contact.php" method="post" role="form" -->
-                <form class="php-email-body-form">
+                <form class="php-email-body-form" id="email-body-form" autocomplete="off">
                     <div class="row">
-                        <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя"
-                                   required>
+                        <div class="form-group">
+                            <input type="text" name="client-name" class="form-control" id="client-name"
+                                   placeholder="Ваше имя">
                         </div>
-                        <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email"
-                                   placeholder="Ваш адрес электронной почты" required>
-                        </div>
+
                     </div>
                     <div class="row form-group mt-3 ">
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема"
-                                   required>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="tel" class="form-control" name="client-tel" id="client-tel"
+                                   placeholder="Контактный телефон" autocomplete="off">
                         </div>
                         <div class="col-md-6 form-group">
                             <input type="text" class="form-control" name="promo_id" id="promo_id"
@@ -674,13 +670,12 @@
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Сообщение"
-                                  required></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="5"
+                                  placeholder="Сообщение"></textarea>
                     </div>
                     <div class="my-3">
-                        <div class="loading">Загрузка</div>
-                        <div class="error-message
-              "></div>
+                        <div class="body-mail-form-loading">Загрузка</div>
+                        <div class="error-message"></div>
                         <div class="sent-message">Ваше сообщение было отправлено. Спасибо!</div>
                     </div>
                     <div class="text-center">
@@ -721,74 +716,69 @@
             </div>
         </div>
     </div>
-    <div class="footer-bottom text-center">
+    <!-- <div class="footer-bottom text-center">
         <p class="mb-0">© Все права защищены 2024</p>
-    </div>
+    </div> -->
 </footer>
 
 
 <!-- Modal connect -->
+<!--
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-xl">
+     <div class="modal-content">
+       <div class="modal-body p-0">
+         <div class="container-fluid">
+           <div class="row gy-4">
+             <div class="col-lg-4 col-sm-12 bg-cover" style="background-image: url(img/c2.jpg); min-height:300px;">
+               <div>
+               </div>
+             </div>
+             <div class="col-lg-8">
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="container-fluid">
-                    <div class="row gy-4">
-                        <div class="col-lg-4 col-sm-12 bg-cover"
-                             style="background-image: url(img/c2.jpg); min-height:300px;">
-                            <div>
+               <form action="https://www.motodc.ru/forms/contact.php" class="p-lg-5 col-12 row g-3 php-email-form">
+                 <div>
+                   <h1>Связаться</h1>
+                   <p>Буду рад ответить на любые ваши вопросы</p>
+                 </div>
+                 <div class="col-lg-6">
+                   <label for="userName" class="form-label">Имя</label>
+                   <input type="text" class="form-control" placeholder="Иван" id="userName"
+                     aria-describedby="emailHelp">
+                 </div>
+                 <div class="col-12">
+                   <label for="userName" class="form-label">Адрес электронной почты</label>
+                   <input type="email" class="form-control" placeholder="adres@example.com" id="userSecondName"
+                     aria-describedby="emailHelp">
+                 </div>
+                 <div class="col-12">
+                   <label for="exampleInputEmail1" class="form-label">Введите сообщение</label>
+                   <textarea name="" placeholder="Добрый день, у меня есть несколько вопросов." class="form-control"
+                     id="exampleInputEmail1" rows="4"></textarea>
+                 </div>
 
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <!--                action="https://www.motodc.ru/forms/contact.php"-->
-                            <form
-                                    action="https://www.motodc.ru/forms/contact.php"
-                                    method="post" role="form"
-                                    class="p-lg-5 col-12 row g-3 php-email-form">
-                                <div>
-                                    <h1>Связаться</h1>
-                                    <p>Буду рад ответить на любые ваши вопросы</p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="userName" class="form-label">Имя</label>
-                                    <input type="text" class="form-control" placeholder="Иван" id="userName"
-                                           aria-describedby="emailHelp">
-                                </div>
-                                <div class="col-12">
-                                    <label for="userName" class="form-label">Адрес электронной почты</label>
-                                    <input type="email" class="form-control" placeholder="adres@example.com"
-                                           id="userSecondName"
-                                           aria-describedby="emailHelp">
-                                </div>
-                                <div class="col-12">
-                                    <label for="exampleInputEmail1" class="form-label">Введите сообщение</label>
-                                    <textarea name="" placeholder="Добрый день, у меня есть несколько вопросов."
-                                              class="form-control"
-                                              id="exampleInputEmail1" rows="4"></textarea>
-                                </div>
+                 <div class="col-12">
+                   <button type="submit" class="btn btn-brand">Отправить сообщение</button>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+         .
+       </div>
 
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-brand">Отправить сообщение</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                .
-            </div>
-
-        </div>
-    </div>
-</div>
-
+     </div>
+   </div>
+ </div>
+-->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/mail.js"></script>
+<script src="js/inputmask.min.js"></script>
+<script src="js/just-validate.min.js"></script>
+<script type="module" src="js/mail.js"></script>
+<script type="module" src="js/app.js"></script>
 </body>
 
 </html>

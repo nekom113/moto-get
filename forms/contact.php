@@ -37,8 +37,10 @@ try {
     $mail->Body =
         '<p> <b>Имя:</b> ' .
         $_POST['name'] .
-        '<br/> <b>Email:</b> ' .
-        $_POST['email'] .
+        '<br/> <b>Tel:</b> ' .
+        $_POST['tel'] .
+        '<br/><b>Сообщение:</b> ' .
+        $_POST['promoCode'] .
         '<br/><b>Сообщение:</b> ' .
         $_POST['message'] .
         '<br/></p>';
@@ -46,8 +48,11 @@ try {
     $mail->AltBody =
         'Имя: ' .
         $_POST['name'] .
-        ' Email: ' .
-        $_POST['email'] .
+        ' Телефон: ' .
+        $_POST['tel'] .
+        'Промокод: ' .
+        $_POST['promoCode'] .
+        '';
         'Сообщение: ' .
         $_POST['message'] .
         '';

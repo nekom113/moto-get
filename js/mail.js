@@ -42,7 +42,7 @@ validation
         message:mailBodyForm.querySelector('#message').value,
   }
 
-  let response = await fetch("https://www.motodc.ru/forms/contact.php", {
+  let response = await fetch("forms/contact.php", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
@@ -59,8 +59,8 @@ validation
    }, 3000)
 })
 
- 
- 
+
+
 
 
 

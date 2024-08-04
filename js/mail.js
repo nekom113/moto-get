@@ -54,12 +54,16 @@ validation
 
     const result = await response.text()
 
-    console.log({result, data});
-
     const messageSentBlock         = mailBodyForm.querySelector(".sent-message")
+    messageSentBlock.textContent = result
     messageSentBlock.style.display = 'block';
+    loader.style.display           = 'none';
+
+    clientName.value=''
+    mailBodyForm.querySelector('#client-tel').value=''
+    mailBodyForm.querySelector('#promo_id').value=''
+    mailBodyForm.querySelector('#message').value=''
     setTimeout(() => {
-        loader.style.display           = 'none';
         messageSentBlock.style.display = 'none';
     }, 3000)
 })

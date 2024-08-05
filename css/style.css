@@ -636,8 +636,9 @@ input.form-control {
 }
 
 .form-control:focus {
+  border-color: #ff9900 1px solid;
   box-shadow: none;
-  border-color: var(--brand);
+  /* border-color: var(--brand); */
 }
 
 /*--------------------------------------------------------------
@@ -781,18 +782,18 @@ input.form-control {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .php-email-body-form {
   width: 100%;
   padding: 30px;
   background: #fff;
   border-radius: 4px;
 }
 
-.contact .php-email-form .form-group {
+.contact .php-email-body-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contact .php-email-body-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -800,7 +801,15 @@ input.form-control {
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .php-email-body-form:focus {
+  display: none;
+  color: rgb(4, 0, 255);
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-body-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -809,11 +818,11 @@ input.form-control {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-body-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .php-email-body-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -822,14 +831,14 @@ input.form-control {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .php-email-body-form .body-mail-form-loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .php-email-body-form .body-mail-form-loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -842,22 +851,22 @@ input.form-control {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .php-email-body-form input,
+.contact .php-email-body-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact .php-email-body-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .php-email-body-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-body-form button[type=submit] {
   background: var(--brand);
   border: 0;
   padding: 10px 24px;
@@ -866,7 +875,7 @@ input.form-control {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-body-form button[type=submit]:hover {
   background: var(--brand);
 }
 

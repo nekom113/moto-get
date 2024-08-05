@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     //Owl
     $('.hero-slider').owlCarousel({
@@ -43,7 +41,6 @@ $(document).ready(function () {
 
     $('.reviews-slider').owlCarousel({
         loop: true,
-        nav: false,
         dots: true,
         smartSpeed: 900,
         items: 1,
